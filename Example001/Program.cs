@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-void printPlanesNumber(float x, float y)
+﻿void printPlanesNumber(float x, float y) // функция без возврата параметра
 {
     if (x > 0 && y > 0)
         Console.WriteLine("Плокскость 1");
