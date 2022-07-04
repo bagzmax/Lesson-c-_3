@@ -18,7 +18,7 @@ void printRangeXY(float x)
         System.Console.WriteLine("Плоскость 4: X > 0 Y < 0");
     }
 }
-printRangeXY(4);
+printRangeXY(2);
 
 
 

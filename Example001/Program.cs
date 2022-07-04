@@ -1,4 +1,4 @@
-﻿void printPlanesNumber(float x, float y) // функция без возврата параметра
+﻿/* void printPlanesNumber(float x, float y) // функция без возврата параметра/ float - дробный тип данных (с точкой)
 {
     if (x > 0 && y > 0)
         Console.WriteLine("Плокскость 1");
@@ -19,28 +19,28 @@ Console.Write("Введите координату Y: ");
 int y = int.Parse(Console.ReadLine()!);
 
 printPlanesNumber(x, y);
-Console.WriteLine();
+Console.WriteLine(); */
 
-//int getPlanesNumber(float x, float y)
-// {
-//     if (x > 0 && y > 0)
-//         return 1;
-//     if (x < 0 && y > 0)
-//         return 2;
-//     if (x < 0 && y < 0)
-//         return 3;
-//     if (x > 0 && y < 0)
-//         return 4;
+int getPlanesNumber(float x, float y)
+{
+    if (x > 0 && y > 0)
+        return 1;
+    if (x < 0 && y > 0)
+        return 2;
+    if (x < 0 && y < 0)
+        return 3;
+    if (x > 0 && y < 0)
+        return 4;
 
-//     return -1;
-// }
+    return -1;
+}
 
 
-// int planesNumber = getPlanesNumber(-1, 0);
-// if (planesNumber != -1 )
-//     Console.WriteLine($"Плоскость {planesNumber}");
-// else
-//     Console.WriteLine("Некорректные входные данные!!!");
+int planesNumber = getPlanesNumber(-1, 1);
+if (planesNumber != -1 )
+    Console.WriteLine($"Плоскость {planesNumber}");
+else
+    Console.WriteLine("Некорректные входные данные!!!");
 
 
 

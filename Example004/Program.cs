@@ -1,4 +1,6 @@
 ﻿
+// Квадрат чисел от 1 до N
+
 Console.WriteLine ("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int i = 1;
